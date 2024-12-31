@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    *{
+      margin: 0px;
+      padding:0px;
+      box-sizing: border-box;
+    }
+    body{
+      background:navajowhite ;
+    }
+    main{
+      display: flex;
+      flex-direction: column;
+       margin-top:30vh ;
+    }
+    .box{
+      height:10vh ;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 2px solid red;
+      background-color: bisque;
+      
+    }
+    #box2{
+        border: 2px solid black;
+        height: 70vh;
+       
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+       
+       
+        
+        
+    }
+    #box2>img{
+      height: 180px;
+      width: 150px;
+      border-radius: 10px;
+      
+      
+}
+
+
+    
+    .siz{
+      height:4vh ;
+      border-radius:10px;
+      
+    }
+    button{
+      height: 4vh;
+      width:10vh;
+      border-radius:20px ;
+    }
+    button:hover{
+      height:5vh;
+      width: 10vh;
+      background: red;
+      border-radius:30px;
+    }
+    
+
+  </style>
+
+
+
+</head>
+<body>
+<div class="main">
+  <div class="box box1">
+    <input type="text" class="siz" id="url" placeholder="url enter"> 
+    <input type="text" class="siz" id="book" placeholder="book name">
+    <input type="text" class="siz" id="author" placeholder="author name">
+    <button onclick="run()">Submit</button>
+  </div>
+
+  <div id="box2" class="box1">
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
